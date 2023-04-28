@@ -1,0 +1,163 @@
+/* IMPORTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lusitana:wght@400;700&family=Montserrat:ital@1&family=Roboto&family=Sassy+Frass&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/src/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*---- TITLE ----*/
+.title_box {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.title_image {
+  width: 30vw;
+}
+/*-- END TITLE --*/
+
+/*---- INPUT BOX ----*/
+/* style div container */
+.input_direction_box {
+  position: absolute;
+  top: 45vh;
+  right: 35vw;
+  width: 35vw;
+  padding: 3vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+/* style coordinate buttons */
+.coordinate_buttons_box {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 2vh;
+}
+
+.coordinate_buttons {
+  margin: 0;
+  width: 5vw;
+  height: 5vw;
+  margin: 0px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 30px;
+  color: crimson;
+  font-weight: bold;
+  text-shadow: 3px -1px 3px black;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: inset 2px -2px 5px 1px black, 2px -2px 10px 1px crimson;
+}
+
+/* style form */
+.input_direction_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_direction_box > h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input_direction_input {
+  margin: 3vh auto;
+  padding: 0 0 0 1vw;
+  width: 100%;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: crimson;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*style search button */
+
+.input_direction_button {
+  min-width: 30%;
+  margin: auto;
+  padding: 1.5vh 2vw;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  color: crimson;
+  transition-duration: 1s;
+}
+
+.input_direction_button:hover {
+  border: 2px solid white;
+  background-color: crimson;
+  color: white;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 15px 0 crimson;
+}
+
+.input_direction_button:active {
+  background-color: green;
+  box-shadow: 0 0 15px 0 green;
+  transition-duration: 0s;
+}
+
+/*- END INPUT BOX -*/
+
+/*--- INFORMATION CONTAINER ---*/
+.information_container_box {
+  position: absolute;
+  top: 0;
+  max-width: 27vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 10px 1px black;
+  padding: 7vh 2vw 1vh;
+}
+
+.information_container_box span {
+  color: crimson;
+  font-weight: bold;
+}
+/*- END INFORMATION CONTAINER -*/
+
+/*---  RESULT POKEMON ---*/
+.result_pokemons_box {
+  position: absolute;
+  top: 27vh;
+  right: 7vw;
+  width: 20vw;
+  min-height: 50vh;
+  text-align: center;
+  padding: 2vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 5px;
+}
+
+.result_pokemons_box p {
+  font-size: 100px;
+  color: crimson;
+  text-shadow: 3px 3px 5px black;
+}
+
+.result_pokemons_box h5 {
+  font-size: 50px;
+  color: crimson;
+  text-shadow: 3px 3px 5px black;
+}
+/*- END RESULT POKEMON -*/
